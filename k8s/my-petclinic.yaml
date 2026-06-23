@@ -46,7 +46,7 @@ spec:
     - host: my-petclinic.localv2
       http:
         paths:
-          - path: /
+          - path: Prefix
             pathType: ImplementationSpecific
             backend:
               service:
