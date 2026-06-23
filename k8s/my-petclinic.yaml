@@ -25,12 +25,13 @@ kind: Service
 metadata:
   name: uday-petclinic-svc
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
-    app: my-petclinic
+    app: my-petclinicv2
   ports:
     - port: 8087
       targetPort: 8082
+      nodePort: 30087
 
 
 
