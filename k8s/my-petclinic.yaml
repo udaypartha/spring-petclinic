@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: uday-petclinic-deployv2
+  name: uday-petclinic-deployv3
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: my-petclinicv2
+      app: my-petclinicv3
   template:
     metadata:
       labels:
-        app: my-petclinicv2
+        app: my-petclinicv3
     spec:
       containers:
         - name: petclinic-container
-          image: udayparthananda/spring-petclinic:v2
+          image: udayparthananda/spring-petclinic:v3
           imagePullPolicy: Always
           ports:
             - containerPort: 8082
