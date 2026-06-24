@@ -27,10 +27,10 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: my-petclinicv2
+    app: my-petclinicv3
   ports:
     - port: 8087
-      targetPort: 8082
+      targetPort: 8087
       nodePort: 30087
 
 
