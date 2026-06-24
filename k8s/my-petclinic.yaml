@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: uday-petclinic-deployv3
 spec:
-  replicas: 4
+  replicas: 2
   selector:
     matchLabels:
       app: my-petclinicv3
