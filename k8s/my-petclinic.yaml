@@ -31,7 +31,7 @@ spec:
   selector:
     app: my-petclinicv3
   ports:
-  - name: web-metrics
+    - name: web-metrics
     port: 8087
     targetPort: 8082
     
